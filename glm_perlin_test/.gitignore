@@ -1,0 +1,7 @@
+__pycache__
+*.npy
+*.bin
+!makefile
+glm_perlin_test
+glm_perlin_test_amd
+glm_perlin_test_arm

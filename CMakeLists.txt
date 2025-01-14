@@ -1,4 +1,5 @@
 cmake_minimum_required(VERSION 3.13)
+# set(CMAKE_TOOLCHAIN_FILE "${CMAKE_CURRENT_SOURCE_DIR}/toolchain.cmake")
 project(cglm
   VERSION 0.9.5
   HOMEPAGE_URL https://github.com/recp/cglm
