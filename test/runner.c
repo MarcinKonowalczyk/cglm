@@ -67,14 +67,14 @@ main(int argc, const char * argv[]) {
 
       failed++;
     } else {
-      fprintf(stderr, GREEN  "  " OK_TEXT RESET " %-*s  ", maxlen, entry->name);
+    //   fprintf(stderr, GREEN  "  " OK_TEXT RESET " %-*s  ", maxlen, entry->name);
 
-      if (elapsed > 0.01)
-        fprintf(stderr, YELLOW "%.2fs", elapsed);
-      else
-        fprintf(stderr, "0");
+    //   if (elapsed > 0.01)
+    //     fprintf(stderr, YELLOW "%.2fs", elapsed);
+    //   else
+    //     fprintf(stderr, "0");
 
-      fprintf(stderr, "\n" RESET);
+    //   fprintf(stderr, "\n" RESET);
       passed++;
     }
   }
