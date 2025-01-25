@@ -4,7 +4,7 @@ WORKDIR /
 # # Install dependencies
 RUN apt-get update -y
 RUN apt-get install -y clang-15 make cmake
-ENV CPP /usr/bin/clang++-15
+ENV CPP=/usr/bin/clang++-15
 
 # RUN apt-get install -y fish wget unzip vim
 RUN apt-get install -y fish wget unzip
@@ -26,7 +26,7 @@ COPY ./include/cglm .
 
 WORKDIR /cglm_src
 COPY . .
-CMD rm -rf build
+RUN rm -rf build
 
 WORKDIR /glm_perlin_test
 COPY ./glm_perlin_test/glm_perlin_test.cpp .
